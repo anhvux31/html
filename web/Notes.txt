@@ -1,0 +1,7 @@
+Nguyên tắc 1: Tài liệu đủ 3 phần
+	1. Khai báo phiên bản
+	2. Bộ thẻ head: Sẽ chứa những thông tin không hiển thị cho người dùng
+	3. Body: Chứa thông tin hiển thị cho người dùng
+
+Thuộc tính: Attribute
+Giá trị: Value
