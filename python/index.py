@@ -1,0 +1,2 @@
+characterName = "John"
+print(characterName)

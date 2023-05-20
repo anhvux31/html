@@ -23,7 +23,7 @@
 		}
 		#overall{
 			background-color: pink;
-			height: 700px;
+			height: 7000px;
 			width: 100%;
 			float: left;
 		}
@@ -31,36 +31,60 @@
 			background-color: rgb(204, 155, 200);
 			height: 35px;
 			width: 98.7%;
+			position: fixed; top: 0;
+			z-index: 1311;
 		}
 		#menu_bar_under{
-			background-color: pink;
-			height: 28px;
+			background-color: yellow;
+			height: 27px;
 			width: 100%;
 		}
 		#content{
 			background-color: blue;
-			height: 672px;
+			height: 673px;
 			width: 100%;
 			float: left;
 		}
 		#content > .left{
 			background-color: green;
 			height: 100%;
-			width: 50%;
+			width: 40%;
+			position: relative;
 			float: left;
 		}
 		#content > .right{
 			background-color: red;
 			height: 100%;
-			width: 50%;
+			width: 60%;
 			float: left;
+		}
+		#content > .left > .top {
+			height: 60%;
+			width: 50%;
+			overflow: auto;
+			position: relative;
+			left: 182px;
+			top: 50px;
+		}
+		#content > .left > .bottom {
+			background-color: rgb(153, 103, 152);
+			height: 25%;
+			width: 80%;
+			position: relative;
+			left: 0px;
+			bottom: -55px;
+		}
+		#selectSite{
+			position: relative;
+			left: 182px;
+			top: 30px;
 		}
 	</style>
 </head>
 <body>
 	<font>
 		<div id="overall">
-			<div id="menu_bar" style="position: fixed; top: 0px">
+			<div id="menu_bar">
 				<h3 style="position: absolute; top: -12px; left: 5px;">
 					| <a href="">Truyền thuyết</a> | <a href="">Thế giới hoa</a> | <a href="">Góc hoa</a> | <a href="">Thiệp hoa...</a> | <a href="">Tham gia hội hoa Tp</a> |
 				</h3>
@@ -71,7 +95,14 @@
 			<div id="menu_bar_under"></div>
 			<div id="content">
 				<div class="left">
-					<div style="height: 400px; width: 50%; overflow: auto;" style="position: absolute; left: 400px" >
+					<select name="site" id="selectSite">
+						<option value="volvo">http://www.CLBLantp.com.vn</option>
+						<option value="saab">http://www.google.com.vn</option>
+						<option value="mercedes">http://www.j2team.com</option>
+						<option value="audi">http://www.facebook.com.vn</option>
+					</select>
+					<button name="siteGo" id="selectSite">Go</button>
+					<div class="top">
 						<h3>
 							HOA MỘC LAN
 						</h3>
@@ -100,6 +131,23 @@
 							<br><br>
 							- Chuyện là thế này. Bà chủ của ta cũng làm nghề bán hoa giấy như nàng, song có một mụ phù  thuỷ đã tiết lộ cho bà một bí mật về cách làm cho hoa giấy trở thành hoa tươi, nghĩa là phải lấy máu của mình tiếp sức cho các cành hoa. Chính nàng cũng thừa hiểu hoa tươi quý như thế nào rồi. Chẳng bao lâu bà chủ trở nên giàu có. Lúc đó mụ phù thuỷ đã báo trước cho bà ta rằng, dù thế nào cũng chớ có hiến đến giọt máu cuối cùng. Nhưng với bà chủ của ta, dầu có tích góp được bao nhiêu của cải cũng vẫn cứ la ít. Và thế là khi có một vị khách ngoại bang hứa cho bà một khoản tiền lớn nếu bà bằng lòng tiếp thêm sinh lực cho hoa. Bà chủ đã không ngần ngại ngay ca3 đến giọt máu cuối cùng để có thêm nhiều tiền và bà đã phải chuốc lấy cái chết. Số của cải bà để lại trở thành miếng mồi ngon cho đám họ hàng xâu xé nhau…
 						</p>
+					</div>
+					<div class="bottom">
+						<div style="position: relative; top: 9px; left: 65px">
+							<table align="center">
+								<tr>
+									<td>
+										<img src="..\source\buoi 5 + 6\bai tap\Bai 4.3 - Hoa Moc Lan\images\la1.jpg">
+									</td>
+									<td>
+										<img src="..\source\buoi 5 + 6\bai tap\Bai 4.3 - Hoa Moc Lan\images\la2.jpg">
+									</td>
+									<td>
+										<img src="..\source\buoi 5 + 6\bai tap\Bai 4.3 - Hoa Moc Lan\images\la3.jpg">
+									</td>
+								</tr>
+							</table>
+						</div>
 					</div>
 				</div>
 				<div class="right">

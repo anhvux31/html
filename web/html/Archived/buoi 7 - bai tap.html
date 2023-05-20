@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let luong = -1;
+        let mucThue;
+        let thue;
+        let luongRong;
+    
+        switch(true){
+            case (luong >= 15):
+                mucThue = 0.3;
+                break;
+            case (luong >= 7):
+                mucThue = 0.2;
+                break;
+            case (luong >= 0):
+                mucThue = 0.1;
+            default:
+                console.log("Mức luong âm, vui lòng thử lại sau!");
+                throw '';
+        }
+
+        thue = luong * mucThue
+        luongRong = luong - thue
+
+        console.log("Mức lương của bạn: " + luong);
+        console.log("Mức thuế của bạn: " + mucThue);
+        console.log("Thuế bạn phải đóng: " + thue);
+        console.log("Lương ròng của bạn: " + luongRong);
+    </script>
+</body>
+</html>

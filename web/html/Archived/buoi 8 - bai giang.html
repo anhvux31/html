@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bai 8 - bai giang - vong lap va input</title>
+</head>
+<body>
+    <form>
+        Nhập tên của bạn:
+        <input type="text" id="yourName">
+        <button type="button" onclick="printName()">Kiểm tra IQ</button>
+        <br>
+        <br>
+        Nhập số:
+        <input type="number" id="yourNumber">
+        <button type="button" onclick="checkOdd()">Kiểm tra chẵn/lẻ</button>
+    </form>
+    <br>
+    <div id="result"></div>
+    <script type="text/javascript">
+        /*
+        for(i = 1; i < 10; i++){
+            document.write(i);
+        }
+
+        do{
+
+        } while ();
+
+        while*(){
+
+        }
+        */
+        function printName(){
+            let ten = document.getElementById("yourName").value;
+            document.getElementById("result").innerHTML = `Xin chào bạn ${ten}`;
+        }
+
+        function checkOdd(){
+            let number = document.getElementById("yourNumber").value;
+            if((number % 2) == 0){
+                document.getElementById("result").innerHTML = `Đây là số chẵn`;
+                document.getElementById("result").style.color = "Black";
+            } else if((number % 2) == 1) {
+                document.getElementById("result").innerHTML = `Đây là số lẻ`;
+                document.getElementById("result").style.color = "Black";
+            } else {
+                document.getElementById("result").innerHTML = `Đây là số nguyên tố`;
+                document.getElementById("result").style.color = "Red";
+            }
+        }
+    </script>
+</body>
+</html>
